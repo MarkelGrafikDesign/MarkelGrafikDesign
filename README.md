@@ -1,16 +1,42 @@
-## Hi there 👋
+# Lisa Markel — Grafikdesign Portfolio
 
-<!--
-**MarkelGrafikDesign/MarkelGrafikDesign** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Persönliches Portfolio von Lisa Markel, Grafikdesignerin aus Stuttgart. Brand Identity, digitales Ad-Design, Print-Layout und Illustration.
 
-Here are some ideas to get you started:
+🔗 **Live:** [markelgrafikdesign.github.io/MarkelGrafikDesign](https://markelgrafikdesign.github.io/MarkelGrafikDesign/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Projekte
+
+| # | Projekt | Kategorie |
+|---|---------|-----------|
+| 01 | **KOYA Home & Living** | Brand Identity & E-Commerce Konzept |
+| 02 | **Gutscheinkarte für BB Cosmetics** | Brand Print |
+| 03 | **TOMATO** | Interactive Design & Game Development (Rogue-lite Survival Game) |
+| 04 | **Zwischen Pinsel und Pixel** | Eigene Arbeiten — Malerei & Illustration |
+
+## Technik
+
+- Reines **HTML5, CSS3 und Vanilla JavaScript** — kein Framework, kein Build-Prozess
+- Alle Bilder als **Base64** direkt eingebettet (keine externen Asset-Requests)
+- Google Fonts: *Playfair Display*, *Inter*, *DM Mono*
+- Vollständig **responsive** für Mobile, Tablet und Desktop, inklusive mobilem Hamburger-Menü
+- Feste, immer sichtbare Navigation (fixed Nav mit Hintergrund für Lesbarkeit auf jeder Sektion)
+
+## Struktur
+
+```
+index.html   → komplette Seite: Markup, Styles und Script in einer Datei
+```
+
+## Deployment
+
+Die Seite wird über **GitHub Pages** direkt aus diesem Repository ausgeliefert. Änderungen an `index.html` im Hauptbranch werden automatisch live übernommen.
+
+## Kontakt
+
+- ✉ [lisamarkeldesign@gmail.com](mailto:lisamarkeldesign@gmail.com)
+- in [linkedin.com/in/lisa-markel](https://www.linkedin.com/in/lisa-markel-96154b1b5/)
+- ◎ [@markelgraphicdesign](https://www.instagram.com/markelgraphicdesign/)
+
+---
+
+© 2026 Lisa Markel · Alle Rechte vorbehalten

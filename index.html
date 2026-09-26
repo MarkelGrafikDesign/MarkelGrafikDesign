@@ -6,16 +6,16 @@
   <title>Lisa Markel – Graphic Design Portfolio</title>
 
   <!-- SEO -->
-  <meta name="description" content="Portfolio von Lisa Markel – Grafikdesignerin aus Stuttgart. Brand Identity, Digital Ad Design, Print Layout und Illustration.">
+  <meta name="description" content="Portfolio von Lisa Markel – Grafikdesignerin aus Stuttgart. Brand Identity, Amazon- und E-Commerce-Design, Digital Ad Design, Print Layout und Illustration.">
   <meta name="author" content="Lisa Markel">
-  <meta name="keywords" content="Grafikdesign, Portfolio, Lisa Markel, Stuttgart, Brand Identity, Print, Digital, Illustration">
+  <meta name="keywords" content="Grafikdesign, Portfolio, Lisa Markel, Stuttgart, Brand Identity, Amazon Design, A+ Content, E-Commerce, Print, Digital, Illustration">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://markelgrafikdesign.github.io/MarkelGrafikDesign/">
 
   <!-- Open Graph – für LinkedIn, WhatsApp, Facebook -->
   <meta property="og:title" content="Lisa Markel – Graphic Design Portfolio">
-  <meta property="og:description" content="Grafikdesignerin aus Stuttgart. Brand Identity, Digital Ad Design, Print Layout und Illustration.">
+  <meta property="og:description" content="Grafikdesignerin aus Stuttgart. Brand Identity, Amazon- und E-Commerce-Design, Digital Ad Design, Print Layout und Illustration.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://markelgrafikdesign.github.io/MarkelGrafikDesign/">
   <meta property="og:locale" content="de_DE">
@@ -25,7 +25,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@300;400&family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -354,6 +354,137 @@
     @media (max-width:700px){
       #project-tomato .tomato-grid-2{grid-template-columns:1fr;}
     }
+    /* TAVO project – Amazon listing case, scoped styles */
+    #project-tavo{--tv-line:#E2DED5;--tv-muted:#5E6577;--tv-ink:#1A2744;}
+    #project-tavo .tv-sub{margin-top:4.5rem;}
+    #project-tavo .tv-sub-head{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--navy-mid);margin-bottom:1.4rem;padding-bottom:.6rem;border-bottom:1px solid var(--parchment-dark);}
+    #project-tavo .tv-intro{display:grid;gap:.6rem;max-width:640px;margin-bottom:2rem;}
+    #project-tavo .tv-intro h3{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,2.6vw,2rem);line-height:1.2;color:var(--navy);}
+    #project-tavo .tv-intro p{font-size:.95rem;line-height:1.8;color:#3a3a3a;font-weight:300;}
+    #project-tavo svg{display:block;width:100%;height:auto;max-width:100%;}
+    #project-tavo .tv-mono{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;}
+    #project-tavo button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+    /* listing mockup */
+    #project-tavo .tv-listing{background:#fff;border:1px solid var(--tv-line);border-radius:6px;padding:1.5rem;display:grid;grid-template-columns:76px minmax(0,1.05fr) minmax(0,1fr);gap:1.5rem;align-items:start;box-shadow:0 12px 40px rgba(26,39,68,.08);}
+    #project-tavo .tv-listing-label{grid-column:1/-1;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--tv-muted);padding-bottom:1rem;border-bottom:1px solid var(--tv-line);}
+    #project-tavo .tv-thumbs{display:flex;flex-direction:column;gap:8px;}
+    #project-tavo .tv-thumbs button{padding:0;border:1px solid var(--tv-line);border-radius:4px;background:#fff;cursor:pointer;overflow:hidden;width:76px;aspect-ratio:1;}
+    #project-tavo .tv-thumbs button[aria-pressed="true"]{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold);}
+    #project-tavo .tv-stage{border-radius:4px;overflow:hidden;border:1px solid var(--tv-line);background:#fff;}
+    #project-tavo .tv-stage-cap{margin-top:.6rem;color:var(--tv-muted);font-size:.8rem;}
+    #project-tavo .tv-buy{display:grid;gap:1rem;align-content:start;color:var(--tv-ink);}
+    #project-tavo .tv-brand{font-size:.85rem;color:#9A7D35;}
+    #project-tavo .tv-title{font-family:var(--font-body);font-weight:600;font-size:1.1rem;line-height:1.4;}
+    #project-tavo .tv-price{font-size:1.7rem;font-weight:600;display:flex;align-items:baseline;gap:.6rem;font-variant-numeric:tabular-nums;}
+    #project-tavo .tv-price small{font-size:.72rem;font-weight:400;color:var(--tv-muted);}
+    #project-tavo .tv-swatches{display:flex;gap:10px;flex-wrap:wrap;margin-top:.5rem;}
+    #project-tavo .tv-swatches button{width:34px;height:34px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--tv-line);cursor:pointer;}
+    #project-tavo .tv-swatches button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--gold);}
+    #project-tavo .tv-bullets{padding-left:1.1rem;display:grid;gap:.5rem;font-size:.86rem;line-height:1.55;color:#2c2f38;}
+    #project-tavo .tv-bullets b{font-weight:600;letter-spacing:.02em;color:var(--tv-ink);}
+    #project-tavo .tv-note{margin-top:.8rem;font-size:.78rem;color:var(--tv-muted);}
+
+    /* briefing */
+    #project-tavo .tv-brief{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem;}
+    #project-tavo .tv-brief h4{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:.8rem;font-weight:400;}
+    #project-tavo .tv-brief p{font-size:.9rem;line-height:1.8;color:#3a3a3a;font-weight:300;}
+    #project-tavo .tv-prio{list-style:none;display:grid;gap:.5rem;counter-reset:p;}
+    #project-tavo .tv-prio li{counter-increment:p;display:grid;grid-template-columns:24px 1fr;font-size:.88rem;color:#3a3a3a;font-weight:300;}
+    #project-tavo .tv-prio li::before{content:counter(p);font-family:var(--font-mono);font-size:.75rem;color:var(--gold);padding-top:2px;}
+    #project-tavo .tv-prio b{font-weight:600;color:var(--navy);}
+    #project-tavo .tv-flow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:2.5rem;}
+    #project-tavo .tv-flow span{padding:.4rem .9rem;border:1px solid rgba(44,66,112,.35);border-radius:20px;color:var(--navy-mid);background:#fff;}
+    #project-tavo .tv-flow i{color:var(--gold);font-style:normal;}
+    #project-tavo .tv-specs-wrap{overflow-x:auto;margin-top:2.5rem;}
+    #project-tavo table.tv-specs{width:100%;border-collapse:collapse;font-size:.86rem;min-width:560px;}
+    #project-tavo .tv-specs th,#project-tavo .tv-specs td{text-align:left;padding:.8rem .9rem;border-bottom:1px solid var(--parchment-dark);vertical-align:top;}
+    #project-tavo .tv-specs th{font-family:var(--font-mono);font-weight:400;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--navy-mid);}
+    #project-tavo .tv-specs td{color:#3a3a3a;font-variant-numeric:tabular-nums;}
+    #project-tavo .tv-specs td:first-child{font-weight:600;color:var(--navy);white-space:nowrap;}
+
+    /* brand */
+    #project-tavo .tv-brandgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:2rem;}
+    #project-tavo .tv-logo{background:#16323A;border-radius:4px;display:grid;place-items:center;padding:2.5rem 1.2rem;min-height:240px;}
+    #project-tavo .tv-logo svg{max-width:380px;}
+    #project-tavo .tv-palette{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;}
+    #project-tavo .tv-sw{border:1px solid var(--tv-line);border-radius:3px;overflow:hidden;background:#fff;}
+    #project-tavo .tv-sw i{display:block;height:64px;}
+    #project-tavo .tv-sw div{padding:.6rem .8rem;display:grid;gap:2px;}
+    #project-tavo .tv-sw b{font-size:.82rem;font-weight:600;color:var(--navy);}
+    #project-tavo .tv-sw span{font-family:var(--font-mono);font-size:.68rem;color:var(--tv-muted);}
+    #project-tavo .tv-type{margin-top:1rem;display:grid;gap:.4rem;padding:1.1rem;border:1px solid var(--tv-line);border-radius:3px;background:#fff;}
+    #project-tavo .tv-type .big{font-family:Archivo,'Arial Narrow',sans-serif;font-stretch:80%;font-weight:800;font-size:2.1rem;line-height:1.05;color:#16323A;}
+    #project-tavo .tv-type .small{font-size:.85rem;line-height:1.6;color:var(--tv-muted);}
+
+    /* gallery */
+    #project-tavo .tv-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem;}
+    #project-tavo .tv-art{display:grid;gap:.7rem;align-content:start;}
+    #project-tavo .tv-art .frame{border:1px solid var(--tv-line);border-radius:3px;overflow:hidden;background:#fff;box-shadow:0 8px 30px rgba(26,39,68,.07);}
+    #project-tavo .tv-art .tv-mono{color:#9A7D35;}
+    #project-tavo .tv-art p{font-size:.84rem;line-height:1.65;color:var(--tv-muted);}
+
+    /* mobile check */
+    #project-tavo .tv-mobile{display:grid;grid-template-columns:320px minmax(0,1fr);gap:3rem;align-items:center;}
+    #project-tavo .tv-phone{width:100%;max-width:320px;border:10px solid #1c1c1e;border-radius:36px;background:#fff;overflow:hidden;color:#1d2226;font-size:.78rem;box-shadow:0 24px 60px rgba(0,0,0,.25);}
+    #project-tavo .tv-phone .bar{background:#1F2A33;padding:14px 12px 10px;}
+    #project-tavo .tv-phone .search{background:#fff;color:#555;border-radius:6px;padding:8px 10px;font-size:.8rem;}
+    #project-tavo .tv-res{display:grid;grid-template-columns:118px 1fr;gap:10px;padding:10px;border-bottom:1px solid #eceeef;}
+    #project-tavo .tv-res:last-child{border-bottom:0;}
+    #project-tavo .tv-res .im{background:#f6f7f7;border-radius:4px;overflow:hidden;}
+    #project-tavo .tv-res .t{display:grid;gap:6px;align-content:start;}
+    #project-tavo .tv-res .t b{font-weight:600;line-height:1.35;}
+    #project-tavo .tv-res .ph{height:8px;border-radius:4px;background:#e6e8e9;}
+    #project-tavo .tv-res .pr{font-weight:600;font-size:.95rem;}
+    #project-tavo .tv-res .tag{font-size:.66rem;color:#8a9094;}
+    #project-tavo .tv-checks{display:grid;gap:1.4rem;}
+    #project-tavo .tv-check{display:grid;grid-template-columns:120px 1fr;gap:1.1rem;align-items:center;}
+    #project-tavo .tv-check .mini{border:1px solid var(--tv-line);border-radius:3px;overflow:hidden;background:#fff;}
+    #project-tavo .tv-check p{font-size:.9rem;line-height:1.7;color:#3a3a3a;font-weight:300;}
+    #project-tavo .tv-check b{font-weight:600;color:var(--navy);}
+
+    /* A+ */
+    #project-tavo .tv-aplus{display:grid;gap:2.5rem;}
+    #project-tavo .tv-module{display:grid;gap:.7rem;}
+    #project-tavo .tv-module-label{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;color:var(--tv-muted);}
+    #project-tavo .tv-module-label b{color:#9A7D35;font-weight:400;}
+    #project-tavo .tv-mbox{border:1px solid var(--tv-line);border-radius:3px;overflow:hidden;background:#fff;color:#1d2226;}
+    #project-tavo .tv-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;padding:1.4rem;}
+    #project-tavo .tv-tile{display:grid;gap:.6rem;align-content:start;}
+    #project-tavo .tv-tile h5,#project-tavo .tv-story h5{font-family:Archivo,'Arial Narrow',sans-serif;font-stretch:85%;font-weight:700;font-size:1.2rem;color:#16323A;}
+    #project-tavo .tv-tile p,#project-tavo .tv-story p{font-size:.86rem;color:#4f5a60;line-height:1.55;}
+    #project-tavo .tv-cmp-wrap{overflow-x:auto;}
+    #project-tavo table.tv-cmp{width:100%;border-collapse:collapse;font-size:.86rem;min-width:560px;font-variant-numeric:tabular-nums;}
+    #project-tavo .tv-cmp th,#project-tavo .tv-cmp td{padding:.75rem;text-align:center;border-bottom:1px solid #e8ebec;}
+    #project-tavo .tv-cmp th:first-child,#project-tavo .tv-cmp td:first-child{text-align:left;color:#4f5a60;font-weight:500;width:28%;}
+    #project-tavo .tv-cmp thead th{vertical-align:bottom;font-family:Archivo,'Arial Narrow',sans-serif;font-stretch:85%;font-weight:700;font-size:1.05rem;color:#16323A;}
+    #project-tavo .tv-cmp thead svg{width:90px;margin:0 auto 8px;}
+    #project-tavo .tv-cmp .hi{background:#EEF4F5;}
+    #project-tavo .tv-story{display:grid;grid-template-columns:260px minmax(0,1fr);gap:1.8rem;padding:1.4rem;align-items:center;}
+    #project-tavo .tv-story h5{font-size:1.6rem;font-weight:800;line-height:1.1;margin-bottom:.6rem;}
+    #project-tavo .tv-story p{max-width:60ch;}
+    #project-tavo .tv-story p+p{margin-top:.6rem;}
+
+    /* learnings */
+    #project-tavo .tv-learn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;}
+    #project-tavo .tv-learn div{padding-top:1rem;border-top:1px solid var(--gold);display:grid;gap:.5rem;align-content:start;}
+    #project-tavo .tv-learn h4{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--navy);}
+    #project-tavo .tv-learn p{font-size:.88rem;line-height:1.75;color:#3a3a3a;font-weight:300;}
+
+    @media (max-width:960px){
+      #project-tavo .tv-listing{grid-template-columns:1fr;}
+      #project-tavo .tv-thumbs{flex-direction:row;overflow-x:auto;order:2;padding-bottom:4px;}
+      #project-tavo .tv-thumbs button{flex:0 0 64px;width:64px;}
+      #project-tavo .tv-gallery{grid-template-columns:repeat(2,minmax(0,1fr));}
+      #project-tavo .tv-brief,#project-tavo .tv-brandgrid,#project-tavo .tv-mobile,#project-tavo .tv-learn{grid-template-columns:1fr;}
+      #project-tavo .tv-phone{margin:0 auto;}
+    }
+    @media (max-width:600px){
+      #project-tavo .tv-gallery,#project-tavo .tv-three,#project-tavo .tv-story{grid-template-columns:1fr;}
+      #project-tavo .tv-palette{grid-template-columns:repeat(2,minmax(0,1fr));}
+      #project-tavo .tv-check{grid-template-columns:90px 1fr;}
+      #project-tavo .tv-listing{padding:1rem;}
+    }
 </style>
 </head>
 <body>
@@ -368,6 +499,7 @@
   <ul class="nav-links">
     <li><a href="#about">Über mich</a></li>
     <li><a href="#project-koya">Projekte</a></li>
+    <li><a href="#project-tavo">Amazon-Design</a></li>
     <li><a href="#project-art">Eigene Kunst</a></li>
     <li><a href="#contact">Kontakt</a></li>
   </ul>
@@ -833,7 +965,237 @@
   </div>
 </section>
 
-<!-- PROJECT 02 – GUTSCHEIN -->
+<!-- PROJECT 02 – TAVO AMAZON LISTING -->
+<section id="project-tavo" class="section-light">
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="tv-shade" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#000" stop-opacity=".30"/><stop offset=".13" stop-color="#fff" stop-opacity=".24"/>
+        <stop offset=".26" stop-color="#fff" stop-opacity=".05"/><stop offset=".6" stop-color="#000" stop-opacity="0"/>
+        <stop offset=".88" stop-color="#000" stop-opacity=".2"/><stop offset="1" stop-color="#000" stop-opacity=".36"/>
+      </linearGradient>
+      <linearGradient id="tv-steel" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#7d8488"/><stop offset=".3" stop-color="#eef1f2"/><stop offset=".6" stop-color="#b7bdc1"/><stop offset="1" stop-color="#6f767a"/>
+      </linearGradient>
+      <linearGradient id="tv-hot" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#EE8457"/><stop offset="1" stop-color="#C2482A"/></linearGradient>
+      <linearGradient id="tv-cold" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#E6F1F3"/><stop offset="1" stop-color="#B3D0D6"/></linearGradient>
+      <linearGradient id="tv-sky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#F8E9D8"/><stop offset="1" stop-color="#F0C29C"/></linearGradient>
+      <symbol id="tv-bottle" viewBox="0 0 200 600">
+        <path d="M80 44 C80 6 120 6 120 44" fill="none" stroke="#24272A" stroke-width="12" stroke-linecap="round"/>
+        <rect x="60" y="34" width="80" height="62" rx="12" fill="#2A2D31"/>
+        <rect x="60" y="34" width="80" height="62" rx="12" fill="url(#tv-shade)"/>
+        <rect x="66" y="48" width="68" height="3" fill="#fff" opacity=".08"/>
+        <rect x="66" y="80" width="68" height="3" fill="#000" opacity=".25"/>
+        <rect x="64" y="94" width="72" height="14" fill="url(#tv-steel)"/>
+        <path d="M66 106 L134 106 C136 128 162 134 162 170 L162 556 Q162 584 134 584 L66 584 Q38 584 38 556 L38 170 C38 134 64 128 66 106 Z" style="fill:var(--bc,#1F4E5A)"/>
+        <path d="M66 106 L134 106 C136 128 162 134 162 170 L162 556 Q162 584 134 584 L66 584 Q38 584 38 556 L38 170 C38 134 64 128 66 106 Z" fill="url(#tv-shade)"/>
+        <rect x="54" y="170" width="7" height="370" rx="3.5" fill="#fff" opacity=".16"/>
+        <text x="100" y="298" text-anchor="middle" font-family="Archivo, 'Arial Narrow', sans-serif" font-weight="800" font-stretch="80%" font-size="34" letter-spacing="3" fill="#fff" fill-opacity=".94">TAVO</text>
+        <text x="100" y="320" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="500" font-size="9" letter-spacing="3" fill="#fff" fill-opacity=".7">FLOW · 750 ML</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="project-wrap">
+    <div class="project-header">
+      <p class="project-number" style="color:var(--navy-mid);">Projekt 02 · Amazon Design &amp; E-Commerce · TAVO Flow</p>
+      <p style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;color:var(--gold);margin-top:.4rem;">Eigenkonzept · fiktive Marke</p>
+      <div style="height:.8rem;"></div>
+      <h2 class="section-title">TAVO Flow<br><em style="font-style:italic;color:var(--navy-mid);">Amazon Listing &amp; A+ Content</em></h2>
+      <div class="thin-rule"></div>
+      <p class="section-body" style="margin-bottom:1.2rem;">Für die fiktive Trinkflaschen-Marke TAVO habe ich einen kompletten Amazon-Auftritt entwickelt: sieben Produktbilder, vier A+ Module und eine kompakte Markenbasis. Ziel war, im Suchergebnis aufzufallen und die wichtigsten Kaufgründe in wenigen Sekunden zu klären, vor allem auf dem Smartphone.</p>
+      <p class="section-body">Das Mockup unten ist interaktiv: Bilder durchklicken und die Farbvariante wechseln.</p>
+      <div class="project-tag-row">
+        <span class="project-tag section-light">Adobe Photoshop</span>
+        <span class="project-tag section-light">Adobe Illustrator</span>
+        <span class="project-tag section-light">Amazon Produktbilder</span>
+        <span class="project-tag section-light">A+ Content</span>
+        <span class="project-tag section-light">Copywriting</span>
+      </div>
+    </div>
+
+    <div class="tv-listing">
+      <div class="tv-listing-label tv-mono"><span>Listing-Konzept · Produktdetailseite</span><span>Bilder anklicken, Farbe wechseln</span></div>
+      <div class="tv-thumbs" id="tv-thumbs" role="group" aria-label="Produktbilder"></div>
+      <div>
+        <div class="tv-stage" id="tv-stage"></div>
+        <p class="tv-stage-cap" id="tv-stageCap"></p>
+      </div>
+      <div class="tv-buy">
+        <span class="tv-brand">Marke: TAVO</span>
+        <p class="tv-title">TAVO Flow Trinkflasche Edelstahl 750 ml, vakuumisoliert, 24 h kalt und 12 h heiß, auslaufsicher, BPA-frei, für Sport, Büro und Outdoor</p>
+        <div class="tv-price">29,90 € <small>Beispielpreis</small></div>
+        <div>
+          <p style="font-size:.85rem;">Farbe: <b id="tv-colorName">Fjord</b></p>
+          <div class="tv-swatches" id="tv-swatches" role="group" aria-label="Farbe wählen"></div>
+        </div>
+        <div>
+          <p style="font-size:.85rem;font-weight:600;margin-bottom:.5rem;">Über diesen Artikel</p>
+          <ul class="tv-bullets">
+            <li><b>TEMPERATUR, DIE BLEIBT:</b> Doppelwandige Vakuumisolierung hält Getränke bis zu 24 Stunden kalt und bis zu 12 Stunden heiß.</li>
+            <li><b>100 % AUSLAUFSICHER:</b> Der Schraubdeckel mit Silikondichtung schließt dicht, auch liegend in der Tasche.</li>
+            <li><b>REINER GESCHMACK:</b> Innen 18/8 Edelstahl, BPA-frei und ohne Beschichtung. Nimmt keine Gerüche an.</li>
+            <li><b>PASST ÜBERALL:</b> Mit Ø 7,6 cm passend für Autohalterungen und Rucksackfächer, nur 410 g leicht.</li>
+            <li><b>GRIFFIG UND ROBUST:</b> Pulverbeschichtete Oberfläche, kratzfest und rutschfest, ohne Kondenswasser außen.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="tv-note">TAVO ist eine fiktive Marke, entwickelt als Portfolio-Projekt. Alle Visuals, Texte und Produktdaten sind eigene Entwürfe.</p>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">Briefing &amp; Strategie</p>
+      <div class="tv-intro">
+        <h3>Vom Kaufgrund zur Bildstory</h3>
+        <p>Auf Amazon entscheidet die Bildstrecke oft schneller als der Text. Deshalb habe ich die Bilder nach den Fragen sortiert, die Käufer der Reihe nach stellen.</p>
+      </div>
+      <div class="tv-brief">
+        <div><h4>Ausgangslage</h4><p>TAVO startet als junge D2C-Marke auf Amazon.de. Die Kategorie ist voll mit ähnlichen Flaschen, viele Listings zeigen dieselben Features ohne erkennbare Marke.</p></div>
+        <div><h4>Zielgruppe</h4><p>Berufstätige zwischen 25 und 40, die pendeln, nach der Arbeit trainieren und weg von Einwegplastik wollen. Sie kaufen mobil und vergleichen schnell.</p></div>
+        <div><h4>Kernbotschaften nach Priorität</h4>
+          <ol class="tv-prio">
+            <li><span><b>Temperatur:</b> 24 h kalt, 12 h heiß</span></li>
+            <li><span><b>Dicht:</b> sicher in jeder Tasche</span></li>
+            <li><span><b>Material:</b> Edelstahl, BPA-frei</span></li>
+            <li><span><b>Passform:</b> Autohalterung, Rucksack</span></li>
+            <li><span><b>Stil:</b> vier Farben mit Haltung</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="tv-flow tv-mono" aria-label="Arbeitsablauf">
+        <span>Briefing</span><i>→</i><span>Wettbewerbsanalyse</span><i>→</i><span>Bildstory</span><i>→</i><span>Gestaltung</span><i>→</i><span>Feedbackrunde</span><i>→</i><span>Export</span>
+      </div>
+      <div class="tv-specs-wrap">
+        <table class="tv-specs">
+          <thead><tr><th>Asset</th><th>Format</th><th>Gestaltungsregel</th></tr></thead>
+          <tbody>
+            <tr><td>Hauptbild</td><td>2000 × 2000 px, sRGB</td><td>Reinweißer Hintergrund (RGB 255), kein Text, Produkt füllt rund 85 % der Fläche</td></tr>
+            <tr><td>Zusatzbilder 2 bis 7</td><td>2000 × 2000 px, sRGB</td><td>Eine Botschaft pro Bild, Headline in höchstens fünf Wörtern, lesbar ab 160 px Breite</td></tr>
+            <tr><td>A+ Header</td><td>970 × 600 px</td><td>Markenversprechen und Produktfamilie, Text links, Produkt rechts</td></tr>
+            <tr><td>A+ Drei-Bild-Modul</td><td>3 × 300 × 300 px</td><td>Anwendungssituationen mit kurzer Bildunterschrift</td></tr>
+            <tr><td>A+ Vergleichstabelle</td><td>150 × 300 px je Produkt</td><td>Größen der Produktfamilie, Cross-Selling innerhalb der Marke</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">Markenidentität</p>
+      <div class="tv-intro">
+        <h3>Eine Marke aus heiß und kalt</h3>
+        <p>Das Zeichen teilt einen Kreis in Glut und Gletscher. Diese Spannung zieht sich durch Farben, Bildsprache und Headlines, damit jedes Asset sofort als TAVO erkennbar ist.</p>
+      </div>
+      <div class="tv-brandgrid">
+        <div class="tv-logo" id="tv-logo"></div>
+        <div>
+          <div class="tv-palette">
+            <div class="tv-sw"><i style="background:#16323A"></i><div><b>Tiefsee</b><span>#16323A</span></div></div>
+            <div class="tv-sw"><i style="background:#1F4E5A"></i><div><b>Fjord</b><span>#1F4E5A</span></div></div>
+            <div class="tv-sw"><i style="background:#D9643A"></i><div><b>Ember</b><span>#D9643A</span></div></div>
+            <div class="tv-sw"><i style="background:#DCEBEE"></i><div><b>Gletscher</b><span>#DCEBEE</span></div></div>
+            <div class="tv-sw"><i style="background:#8FA89A"></i><div><b>Salbei</b><span>#8FA89A</span></div></div>
+            <div class="tv-sw"><i style="background:#2E3236"></i><div><b>Graphit</b><span>#2E3236</span></div></div>
+          </div>
+          <div class="tv-type">
+            <span class="tv-mono" style="color:var(--tv-muted);">Schrift: Archivo, schmal geschnitten</span>
+            <span class="big">Heiß oder eiskalt.</span>
+            <span class="small">Headlines in Extra Bold mit 80 % Breite, Fließtext in Regular. Schmale Schnitte halten Headlines auch im kleinen Thumbnail groß.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">Bildstrecke</p>
+      <div class="tv-intro">
+        <h3>Sieben Bilder, eine Geschichte</h3>
+        <p>Das Hauptbild steht oben im Listing. Die Zusatzbilder folgen der Reihenfolge der Kernbotschaften, damit Käufer beim Wischen genau die Antworten bekommen, die sie als Nächstes suchen.</p>
+      </div>
+      <div class="tv-gallery" id="tv-gallery"></div>
+    </div>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">Mobile-Check</p>
+      <div class="tv-intro">
+        <h3>Gestaltet für den Daumen</h3>
+        <p>Die meisten Käufe starten in der mobilen Suche. Dort ist das Hauptbild oft kaum größer als eine Briefmarke.</p>
+      </div>
+      <div class="tv-mobile">
+        <div class="tv-phone" aria-label="Suchergebnisse auf dem Smartphone, schematisch">
+          <div class="bar"><div class="search">trinkflasche edelstahl 750ml</div></div>
+          <div class="tv-res"><div class="im" id="tv-mobMain"></div><div class="t"><b>TAVO Flow Trinkflasche Edelstahl 750 ml, vakuumisoliert…</b><span class="pr">29,90 €</span><span class="tag">Konzept</span></div></div>
+          <div class="tv-res"><div class="im" id="tv-mobC1"></div><div class="t"><div class="ph" style="width:92%"></div><div class="ph" style="width:70%"></div><div class="ph" style="width:34%"></div><span class="tag">Mitbewerber, Platzhalter</span></div></div>
+          <div class="tv-res"><div class="im" id="tv-mobC2"></div><div class="t"><div class="ph" style="width:86%"></div><div class="ph" style="width:60%"></div><div class="ph" style="width:30%"></div><span class="tag">Mitbewerber, Platzhalter</span></div></div>
+        </div>
+        <div class="tv-checks">
+          <div class="tv-check"><div class="mini" id="tv-chk1"></div><p><b>Produkt groß, Weißraum klein.</b> Das Hauptbild füllt rund 85 % der Fläche. In der Ergebnisliste wirkt die Flasche dadurch deutlich präsenter als Angebote mit viel Leerraum.</p></div>
+          <div class="tv-check"><div class="mini" id="tv-chk2"></div><p><b>Headlines, die man im Vorbeiwischen liest.</b> Jede Headline hat höchstens fünf Wörter und wurde bei 160 px Breite auf Lesbarkeit geprüft.</p></div>
+          <div class="tv-check"><div class="mini" id="tv-chk3"></div><p><b>Zahlen statt Adjektive.</b> 24 h, 12 h, 750 ml, 410 g. Konkrete Werte beantworten Fragen schneller als Wörter wie „lange“ oder „leicht“.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">A+ Content</p>
+      <div class="tv-intro">
+        <h3>Die Marke unter dem Kaufbutton</h3>
+        <p>Der A+ Bereich greift die Bildsprache der Produktbilder auf und erzählt, wofür TAVO steht. Die Vergleichstabelle führt zu den anderen Größen der Produktfamilie.</p>
+      </div>
+      <div class="tv-aplus">
+        <div class="tv-module">
+          <div class="tv-module-label tv-mono"><b>Modul 1 · Header-Bild mit Text</b><span>970 × 600 px</span></div>
+          <div class="tv-mbox" id="tv-m1"></div>
+        </div>
+        <div class="tv-module">
+          <div class="tv-module-label tv-mono"><b>Modul 2 · Drei Bilder mit Text</b><span>3 × 300 × 300 px</span></div>
+          <div class="tv-mbox"><div class="tv-three">
+            <div class="tv-tile"><div id="tv-t1"></div><h5>Im Büro</h5><p>Der Kaffee vom Morgen ist mittags noch warm. Kein Kondenswasser auf dem Schreibtisch.</p></div>
+            <div class="tv-tile"><div id="tv-t2"></div><h5>Nach dem Training</h5><p>Eiskaltes Wasser auch nach Stunden in der Sporttasche. Dicht, auch wenn sie mal liegt.</p></div>
+            <div class="tv-tile"><div id="tv-t3"></div><h5>Draußen unterwegs</h5><p>Robuste Pulverbeschichtung und Tragschlaufe für Wanderungen und lange Tage.</p></div>
+          </div></div>
+        </div>
+        <div class="tv-module">
+          <div class="tv-module-label tv-mono"><b>Modul 3 · Vergleichstabelle</b><span>150 × 300 px je Produkt</span></div>
+          <div class="tv-mbox tv-cmp-wrap">
+            <table class="tv-cmp">
+              <thead><tr><th></th><th id="tv-c500">TAVO Flow 500</th><th class="hi" id="tv-c750">TAVO Flow 750</th><th id="tv-c1000">TAVO Flow 1000</th></tr></thead>
+              <tbody>
+                <tr><td>Füllmenge</td><td>500 ml</td><td class="hi">750 ml</td><td>1000 ml</td></tr>
+                <tr><td>Höhe</td><td>21,6 cm</td><td class="hi">27,4 cm</td><td>31,8 cm</td></tr>
+                <tr><td>Gewicht</td><td>320 g</td><td class="hi">410 g</td><td>520 g</td></tr>
+                <tr><td>Kalt / heiß</td><td>24 h / 12 h</td><td class="hi">24 h / 12 h</td><td>24 h / 12 h</td></tr>
+                <tr><td>Passt in Autohalterung</td><td>Ja</td><td class="hi">Ja</td><td>Nein</td></tr>
+                <tr><td>Ideal für</td><td>Tasche, Büro</td><td class="hi">Alltag, Sport</td><td>Wandern, Reisen</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tv-module">
+          <div class="tv-module-label tv-mono"><b>Modul 4 · Markengeschichte</b><span>Logo 300 × 300 px, Text</span></div>
+          <div class="tv-mbox"><div class="tv-story">
+            <div id="tv-t4"></div>
+            <div>
+              <h5>Warum kauft man unterwegs noch Plastikflaschen?</h5>
+              <p>Mit dieser Frage fing TAVO an. Die Antwort war meistens: weil die eigene Flasche nicht dicht war, das Wasser lauwarm wurde oder sie einfach nicht in den Getränkehalter passte.</p>
+              <p>TAVO Flow löst genau diese drei Probleme. Mit einer Flasche, die man gern jeden Tag mitnimmt.</p>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tv-sub">
+      <p class="tv-sub-head">Was ich mitnehme</p>
+      <div class="tv-learn">
+        <div><h4>Kaufgrund vor Feature</h4><p>Das Temperaturbild steht an Position 2, weil es die erste Frage beantwortet. Details wie Material und Maße kommen danach.</p></div>
+        <div><h4>Für kleine Bildschirme gestalten</h4><p>Große Zahlen, kurze Headlines und kräftige Kontraste. Was bei 160 px nicht funktioniert, funktioniert auf Amazon nicht.</p></div>
+        <div><h4>Ein System statt Einzelbilder</h4><p>Gleiche Headline-Position, Farben und Typografie in Listing und A+ Content. So wird aus Produktbildern ein Markenauftritt.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT 03 – GUTSCHEIN -->
 <section id="project-gutschein" class="section-dark">
   <div class="project-wrap">
     <div class="gutschein-grid">
@@ -848,7 +1210,7 @@
         </div>
       </div>
       <div class="gutschein-text">
-        <p class="project-number">Projekt 02 · Brand Print · BB Cosmetics</p>
+        <p class="project-number">Projekt 03 · Brand Print · BB Cosmetics</p>
         <div style="height:.8rem;"></div>
         <h2 class="section-title">Gutscheinkarte<br><em style="font-style:italic;color:var(--gold-light);">für BB Cosmetics</em></h2>
         <div class="thin-rule" style="background:var(--gold-light);"></div>
@@ -870,11 +1232,11 @@
   </div>
 </section>
 
-<!-- PROJECT 03 – TOMATO -->
+<!-- PROJECT 04 – TOMATO -->
 <section id="project-tomato" class="section-dark">
   <div class="project-wrap">
     <div class="project-header">
-      <p class="project-number">Projekt 03 · Interactive Design &amp; Game Development · TOMATO</p>
+      <p class="project-number">Projekt 04 · Interactive Design &amp; Game Development · TOMATO</p>
       <p style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.12em;color:rgba(196,168,98,0.5);margin-bottom:0.5rem;">Eigenkonzept · Laufende Entwicklung (v0.1)</p>
       <div style="height:.8rem;"></div>
       <h2 class="section-title">TOMATO<br><em style="font-style:italic;color:var(--gold-light);">Rogue-lite Survival Game</em></h2>
@@ -951,11 +1313,11 @@
   </div>
 </section>
 
-<!-- PROJECT 04 – EIGENE KUNST -->
+<!-- PROJECT 05 – EIGENE KUNST -->
 <section id="project-art" class="section-light">
   <div class="project-wrap">
     <div class="project-header">
-      <p class="project-number" style="color:var(--gold);">Projekt 04 · Eigene Arbeiten · Malerei &amp; Illustration</p>
+      <p class="project-number" style="color:var(--gold);">Projekt 05 · Eigene Arbeiten · Malerei &amp; Illustration</p>
       <div style="height:.8rem;"></div>
       <h2 class="section-title">Zwischen Pinsel<br><em style="font-style:italic;color:var(--navy-mid);">und Pixel</em></h2>
       <div class="thin-rule"></div>
@@ -1031,6 +1393,139 @@
   </div>
 </footer>
 <p class="footer-copyright">© 2026 Lisa Markel · Alle Rechte vorbehalten</p>
+
+<script>
+(function(){
+const C={fjord:'#1F4E5A',ember:'#D9643A',graphit:'#2E3236',salbei:'#8FA89A'};
+const NAMES={fjord:'Fjord',ember:'Ember',graphit:'Graphit',salbei:'Salbei'};
+const DARK='#16323A', GREY='#56626A';
+const FF="Archivo, 'Arial Narrow', sans-serif";
+
+function T(x,y,s,t,o={}){
+  return `<text x="${x}" y="${y}" font-size="${s}" font-family="${FF}" font-weight="${o.w||700}" font-stretch="${o.st||'85%'}" fill="${o.f||DARK}" text-anchor="${o.a||'start'}"${o.ls?` letter-spacing="${o.ls}"`:''}${o.op?` opacity="${o.op}"`:''}>${t}</text>`;
+}
+function B(cx,y,h,col,shadow=true){
+  const w=h/3, by=y+h*0.973;
+  return (shadow?`<ellipse cx="${cx}" cy="${by}" rx="${w*0.45}" ry="${Math.max(3,h*0.02)}" fill="#000" opacity=".14"/>`:'')+
+    `<use href="#tv-bottle" x="${cx-w/2}" y="${y}" width="${w}" height="${h}" style="--bc:${col}"/>`;
+}
+function S(body,label,vb='0 0 1000 1000'){
+  return `<svg viewBox="${vb}" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg">${body}</svg>`;
+}
+function mark(cx,cy,r){
+  return `<path d="M${cx} ${cy-r} A${r} ${r} 0 0 0 ${cx} ${cy+r} Z" fill="#D9643A"/><path d="M${cx} ${cy-r} A${r} ${r} 0 0 1 ${cx} ${cy+r} Z" fill="#DCEBEE"/>`;
+}
+const Y=(x,y)=>`<circle cx="${x}" cy="${y}" r="26" fill="#1F4E5A"/><path d="M${x-11} ${y+1} l8 8 l15 -16" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+const N=(x,y)=>`<circle cx="${x}" cy="${y}" r="26" fill="#EDEEEC"/><path d="M${x-9} ${y-9} l18 18 M${x+9} ${y-9} l-18 18" stroke="#9A9F9F" stroke-width="5" stroke-linecap="round"/>`;
+const P=(x,y)=>`<circle cx="${x}" cy="${y}" r="26" fill="#EDEEEC"/><path d="M${x-10} ${y} h20" stroke="#9A9F9F" stroke-width="5" stroke-linecap="round"/>`;
+
+const ART=[
+ {name:'Hauptbild', why:'Reinweißer Hintergrund, kein Text, Produkt füllt rund 85 % der Fläche. So wirkt die Flasche im Suchergebnis maximal groß.',
+  fn:c=>`<rect width="1000" height="1000" fill="#fff"/>${B(500,60,860,c)}`},
+ {name:'Temperatur', why:'Der wichtigste Kaufgrund zuerst. Die geteilte Fläche übersetzt heiß und kalt ohne ein Wort Erklärung.',
+  fn:c=>`<rect width="500" height="1000" fill="url(#tv-hot)"/><rect x="500" width="500" height="1000" fill="url(#tv-cold)"/>
+   <rect width="1000" height="190" fill="${DARK}"/>
+   ${T(500,122,78,'Heiß oder eiskalt.',{f:'#fff',a:'middle',w:800,st:'80%'})}
+   ${[170,210,250].map(x=>`<path d="M${x} 400 q-16 -26 0 -52 q16 -26 0 -52" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" opacity=".9"/>`).join('')}
+   ${T(210,590,190,'12h',{f:'#fff',a:'middle',w:800,st:'75%'})}
+   ${T(210,650,38,'HEISS',{f:'#fff',a:'middle',w:600,ls:8})}
+   ${T(210,705,28,'Kaffee und Tee',{f:'#fff',a:'middle',w:400,op:.88})}
+   <g stroke="${DARK}" stroke-width="9" stroke-linecap="round" transform="translate(790 330)">
+     ${[0,60,120].map(a=>`<g transform="rotate(${a})"><path d="M0 -52 V52"/><path d="M-12 -40 L0 -28 L12 -40 M-12 40 L0 28 L12 40"/></g>`).join('')}
+   </g>
+   ${T(790,590,190,'24h',{f:DARK,a:'middle',w:800,st:'75%'})}
+   ${T(790,650,38,'KALT',{f:DARK,a:'middle',w:600,ls:8})}
+   ${T(790,705,28,'Wasser und Schorle',{f:DARK,a:'middle',w:400,op:.88})}
+   ${B(500,250,700,c)}`},
+ {name:'Details', why:'Vier Features, direkt am Produkt verortet. Kurze Titel für Schnellleser, Unterzeilen für alle, die vergleichen.',
+  fn:c=>{const pts=[[297,280,'Auslaufsicherer Deckel','Mit Tragschlaufe, 100 % dicht'],[324,470,'Vakuumisoliert','Doppelwandig, kein Kondenswasser'],[324,650,'18/8 Edelstahl','BPA-frei und geschmacksneutral'],[322,840,'Griffige Beschichtung','Pulverlack, kratz- und rutschfest']];
+   return `<rect width="1000" height="1000" fill="#F2F4F3"/>${T(60,120,68,'Durchdacht bis ins Detail.',{w:800,st:'80%'})}
+   ${B(247,200,740,c)}
+   ${pts.map(([x,y,h,s])=>`<path d="M${x} ${y} H440" stroke="${DARK}" stroke-width="3"/><circle cx="${x}" cy="${y}" r="10" fill="#fff" stroke="${DARK}" stroke-width="5"/>${T(462,y+4,40,h,{w:700})}${T(462,y+44,27,s,{w:400,f:GREY})}`).join('')}`}},
+ {name:'Maße', why:'Die typische Frage aus den Kundenfragen: Passt sie in meine Halterung? Maße direkt am Produkt beantworten das.',
+  fn:c=>`<rect width="1000" height="1000" fill="#fff"/>${T(60,120,68,'Passt überall hin.',{w:800,st:'80%'})}
+   ${B(420,210,660,c)}
+   <g stroke="${DARK}" stroke-width="3"><path d="M260 216 V852 M244 216 H276 M244 852 H276"/><path d="M352 900 H488 M352 886 V914 M488 886 V914"/></g>
+   <text transform="rotate(-90 226 534)" x="226" y="534" text-anchor="middle" font-family="${FF}" font-weight="700" font-stretch="85%" font-size="34" fill="${DARK}">27,4 cm</text>
+   ${T(420,955,34,'Ø 7,6 cm',{a:'middle'})}
+   ${[['750 ml','Füllmenge',310],['410 g','Leergewicht',470],['Ø 7,6 cm','passt in Autohalterungen',630]].map(([v,l,y])=>`${T(590,y,76,v,{w:800,st:'78%',f:'#1F4E5A'})}${T(592,y+42,27,l,{w:400,f:GREY})}`).join('')}
+   <path d="M590 730 H940" stroke="#D9DFE1" stroke-width="2"/>
+   ${T(590,790,28,'Im Lieferumfang',{w:700})}${T(590,830,27,'Flasche, Deckel mit Schlaufe,',{w:400,f:GREY})}${T(590,866,27,'Reinigungsbürste',{w:400,f:GREY})}`},
+ {name:'Farben', why:'Alle Varianten auf einen Blick. Gleiche Größe und Position, damit der Vergleich nur über die Farbe läuft.',
+  fn:()=>`<rect width="1000" height="1000" fill="#EEECE6"/>${T(500,130,68,'Vier Farben. Eine Haltung.',{a:'middle',w:800,st:'80%'})}
+   ${Object.keys(C).map((k,i)=>{const cx=140+i*240;return B(cx,240,560,C[k])+T(cx,880,36,NAMES[k],{a:'middle'})+`<text x="${cx}" y="920" text-anchor="middle" font-family="'DM Mono', monospace" font-size="20" fill="${GREY}">${C[k]}</text>`}).join('')}`},
+ {name:'Anwendung', why:'Die Lifestyle-Szene zeigt die Zielgruppe ohne Personenfotos. Die Chips nennen die Situationen aus der Keyword-Recherche.',
+  fn:c=>`<rect width="1000" height="1000" fill="url(#tv-sky)"/><circle cx="300" cy="520" r="120" fill="#E8744A" opacity=".85"/>
+   <polygon points="0,640 180,430 330,560 520,360 720,580 860,470 1000,600 1000,1000 0,1000" fill="#9DB8BD"/>
+   <polygon points="0,760 220,600 420,720 640,560 860,740 1000,660 1000,1000 0,1000" fill="#6F939B"/>
+   <path d="M0 880 Q500 800 1000 870 L1000 1000 L0 1000 Z" fill="#3F636B"/>
+   ${T(60,125,68,'Vom Schreibtisch',{w:800,st:'80%'})}${T(60,200,68,'bis zum Gipfel.',{w:800,st:'80%'})}
+   ${B(720,240,700,c)}
+   ${['Büro','Training','Wandern','Pendeln'].map((l,i)=>`<rect x="${60+i*128}" y="912" width="118" height="50" rx="25" fill="#fff"/>${T(119+i*128,946,25,l,{a:'middle',w:600})}`).join('')}`},
+ {name:'Vergleich', why:'Der Vergleich mit typischen Alternativen beantwortet, warum der Preis gerechtfertigt ist, ohne Mitbewerber zu nennen.',
+  fn:()=>{const rows=[['12 h heiß, 24 h kalt','YNN'],['Kein Kondenswasser','YNY'],['Geschmacksneutral','YYN'],['Auslaufsicher','YPP'],['Plastikfrei','YYN']];
+   const f={Y,N,P};
+   return `<rect width="1000" height="1000" fill="#fff"/>${T(60,120,68,'Warum TAVO?',{w:800,st:'80%'})}
+   <rect x="468" y="190" width="150" height="730" rx="20" fill="#E3EEF0"/>
+   ${T(543,260,30,'TAVO Flow',{a:'middle'})}${T(710,260,28,'Einwandig',{a:'middle',w:500,f:GREY})}${T(880,260,28,'Plastik',{a:'middle',w:500,f:GREY})}
+   ${rows.map(([l,m],i)=>{const y=360+i*120;return `${i?`<path d="M60 ${y-60} H960" stroke="#E6E9EA" stroke-width="2"/>`:''}${T(60,y+11,32,l,{w:600})}${f[m[0]](543,y)}${f[m[1]](710,y)}${f[m[2]](880,y)}`}).join('')}
+   <text x="60" y="970" font-family="${FF}" font-size="20" fill="${GREY}">Vergleich mit typischen Alternativen, eigene Angaben</text>`}}
+];
+
+let idx=0, col='fjord';
+const $=id=>document.getElementById('tv-'+id);
+
+function renderStage(){
+  $('stage').innerHTML=S(ART[idx].fn(C[col]),`Bild ${idx+1}: ${ART[idx].name}`);
+  $('stageCap').textContent=`Bild ${idx+1} von 7 · ${ART[idx].name}`;
+  [...$('thumbs').children].forEach((b,i)=>b.setAttribute('aria-pressed',i===idx));
+}
+function renderThumbs(){
+  $('thumbs').innerHTML=ART.map((a,i)=>`<button type="button" id="tv-thumb${i}" aria-label="Bild ${i+1}: ${a.name}" aria-pressed="${i===idx}">${S(a.fn(C[col]),a.name)}</button>`).join('');
+  [...$('thumbs').children].forEach((b,i)=>b.addEventListener('click',()=>{idx=i;renderStage();}));
+}
+$('swatches').innerHTML=Object.keys(C).map(k=>`<button type="button" id="tv-sw-${k}" style="background:${C[k]}" aria-label="${NAMES[k]}" aria-pressed="${k===col}"></button>`).join('');
+[...$('swatches').children].forEach(b=>b.addEventListener('click',()=>{
+  col=b.id.slice(6); $('colorName').textContent=NAMES[col];
+  [...$('swatches').children].forEach(x=>x.setAttribute('aria-pressed',x===b));
+  renderThumbs(); renderStage();
+}));
+renderThumbs(); renderStage();
+
+$('gallery').innerHTML=ART.slice(1).map((a,i)=>`<figure class="tv-art"><div class="frame">${S(a.fn(C.fjord),a.name)}</div><figcaption><span class="tv-mono">Bild ${i+2} · ${a.name}</span><p>${a.why}</p></figcaption></figure>`).join('');
+
+$('logo').innerHTML=S(`${mark(70,80,48)}<text x="140" y="112" font-family="${FF}" font-weight="800" font-stretch="80%" font-size="96" letter-spacing="6" fill="#fff">TAVO</text><text x="143" y="146" font-family="${FF}" font-weight="500" font-size="16" letter-spacing="7" fill="#DCEBEE" opacity=".8">TEMPERATUR, DIE MITKOMMT</text>`,'TAVO Logo','0 0 420 160');
+
+$('mobMain').innerHTML=S(ART[0].fn(C.fjord),'TAVO Hauptbild');
+$('mobC1').innerHTML=S(`<rect width="1000" height="1000" fill="#fff"/>${B(500,300,420,'#B9BEC1')}`,'Platzhalter');
+$('mobC2').innerHTML=S(`<rect width="1000" height="1000" fill="#fff"/>${B(420,330,380,'#C9CDCF')}${B(600,360,340,'#A9AEB1')}`,'Platzhalter');
+$('chk1').innerHTML=S(ART[0].fn(C.fjord),'Hauptbild klein');
+$('chk2').innerHTML=S(ART[1].fn(C.fjord),'Temperaturbild klein');
+$('chk3').innerHTML=S(ART[3].fn(C.fjord),'Maßbild klein');
+
+$('m1').innerHTML=S(`<rect width="970" height="600" fill="${DARK}"/>
+  <circle cx="720" cy="320" r="235" fill="#23454F"/>
+  ${T(60,130,22,'TAVO',{f:'#DCEBEE',w:600,ls:8,op:.75})}
+  ${T(60,225,72,'Temperatur,',{f:'#fff',w:800,st:'80%'})}${T(60,305,72,'die mitkommt.',{f:'#EE8457',w:800,st:'80%'})}
+  ${T(60,380,26,'24 Stunden kalt, 12 Stunden heiß.',{f:'#fff',w:400,op:.85})}${T(60,418,26,'Für jeden Tag und jede Strecke.',{f:'#fff',w:400,op:.85})}
+  ${mark(88,500,26)}${T(128,510,20,'Glut und Gletscher in einer Flasche',{f:'#DCEBEE',w:500,op:.8})}
+  ${B(810,150,400,C.salbei)}${B(650,120,450,C.ember)}`,'A+ Header: Temperatur, die mitkommt','0 0 970 600');
+
+$('t1').innerHTML=S(`<rect width="300" height="300" fill="#E9EEEE"/><rect y="232" width="300" height="68" fill="#C9D6D8"/>
+  <rect x="34" y="138" width="140" height="88" rx="6" fill="#2E3236"/><rect x="42" y="146" width="124" height="72" rx="3" fill="#DCEBEE"/><rect x="22" y="226" width="164" height="8" rx="3" fill="#2E3236"/>
+  ${B(232,47,190,C.fjord)}`,'Bottle im Büro');
+$('t2').innerHTML=S(`<rect width="300" height="300" fill="#F4E1D6"/><rect y="236" width="300" height="64" fill="#E8C9B6"/>
+  <rect x="34" y="210" width="120" height="12" rx="4" fill="#2E3236"/><rect x="30" y="184" width="26" height="64" rx="6" fill="#2E3236"/><rect x="132" y="184" width="26" height="64" rx="6" fill="#2E3236"/>
+  ${B(220,50,195,C.ember)}`,'Flasche beim Training');
+$('t3').innerHTML=S(`<rect width="300" height="300" fill="#DCE7E3"/><polygon points="0,200 70,120 130,180 200,100 300,190 300,300 0,300" fill="#8FA89A"/><polygon points="0,250 90,190 170,240 250,200 300,230 300,300 0,300" fill="#5E7C70"/>
+  ${B(200,52,200,C.graphit)}`,'Flasche draußen');
+$('t4').innerHTML=S(`<rect width="300" height="300" rx="10" fill="${DARK}"/>${mark(150,120,56)}<text x="150" y="232" text-anchor="middle" font-family="${FF}" font-weight="800" font-stretch="80%" font-size="56" letter-spacing="5" fill="#fff">TAVO</text>`,'TAVO Markenzeichen','0 0 300 300');
+
+[['c500',150],['c750',190],['c1000',230]].forEach(([id,h])=>{
+  const th=$(id); th.insertAdjacentHTML('afterbegin',S(B(75,258-h*0.973,h,C.fjord),th.textContent,'0 0 150 265'));
+});
+})();
+</script>
 
 <script>
   document.querySelectorAll('.nav-links a').forEach(function (link) {

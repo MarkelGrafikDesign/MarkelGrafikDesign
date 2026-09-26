@@ -1,6 +1,6 @@
 # Lisa Markel — Grafikdesign Portfolio
 
-Persönliches Portfolio von Lisa Markel, Grafikdesignerin aus Stuttgart. Brand Identity, digitales Ad-Design, Print-Layout und Illustration.
+Persönliches Portfolio von Lisa Markel, Grafikdesignerin aus Stuttgart. Brand Identity, Amazon- und E-Commerce-Design, digitales Ad-Design, Print-Layout und Illustration.
 
 🔗 **Live:** [markelgrafikdesign.github.io/MarkelGrafikDesign](https://markelgrafikdesign.github.io/MarkelGrafikDesign/)
 
@@ -9,15 +9,16 @@ Persönliches Portfolio von Lisa Markel, Grafikdesignerin aus Stuttgart. Brand I
 | # | Projekt | Kategorie |
 |---|---------|-----------|
 | 01 | **KOYA Home & Living** | Brand Identity & E-Commerce Konzept |
-| 02 | **Gutscheinkarte für BB Cosmetics** | Brand Print |
-| 03 | **TOMATO** | Interactive Design & Game Development (Rogue-lite Survival Game) |
-| 04 | **Zwischen Pinsel und Pixel** | Eigene Arbeiten — Malerei & Illustration |
+| 02 | **TAVO Flow** | Amazon Listing & A+ Content (E-Commerce Konzept) |
+| 03 | **Gutscheinkarte für BB Cosmetics** | Brand Print |
+| 04 | **TOMATO** | Interactive Design & Game Development (Rogue-lite Survival Game) |
+| 05 | **Zwischen Pinsel und Pixel** | Eigene Arbeiten — Malerei & Illustration |
 
 ## Technik
 
 - Reines **HTML5, CSS3 und Vanilla JavaScript** — kein Framework, kein Build-Prozess
 - Alle Bilder als **Base64** direkt eingebettet (keine externen Asset-Requests)
-- Google Fonts: *Playfair Display*, *Inter*, *DM Mono*
+- Google Fonts: *Playfair Display*, *Inter*, *DM Mono*, *Archivo* (nur TAVO-Markengrafiken)
 - Vollständig **responsive** für Mobile, Tablet und Desktop, inklusive mobilem Hamburger-Menü
 - Feste, immer sichtbare Navigation (fixed Nav mit Hintergrund für Lesbarkeit auf jeder Sektion)
 
